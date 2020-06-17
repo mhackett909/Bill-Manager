@@ -1,0 +1,16 @@
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\bin\Debug\Bills.exe.config
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\bin\Debug\Bills.exe
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\bin\Debug\Bills.pdb
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.csprojResolveAssemblyReference.cache
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Properties.Resources.resources
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.csproj.GenerateResource.Cache
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.exe
+c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.pdb
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form2.resources
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form1.resources
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form3.resources
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form4.resources
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form5.resources
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form6.resources
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form7.resources
+C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form8.resources
