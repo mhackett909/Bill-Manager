@@ -1,5 +1,5 @@
 ﻿namespace Bills {
-    partial class Form1 {
+    public partial class Form1 {
         private System.ComponentModel.IContainer components = null;
         protected override void Dispose(bool disposing) {
             if (disposing && (components != null)) { components.Dispose(); }
@@ -36,7 +36,6 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(2, 411);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 23);
             this.button1.TabIndex = 0;
@@ -46,7 +45,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(95, 411);
+       
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 23);
             this.button2.TabIndex = 1;
@@ -77,7 +76,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 52);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 55);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -85,7 +84,6 @@
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(691, 353);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_ColumnHeaderMouseClick);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
@@ -133,12 +131,11 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.infoToolStripMenuItem});
+                this.fileToolStripMenuItem, this.infoToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(698, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(698, 18);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -152,7 +149,7 @@
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.fileToolStripMenuItem.Text = "Options";
+            this.fileToolStripMenuItem.Text = "Menu";
             // 
             // editBillNameToolStripMenuItem
             // 
@@ -213,14 +210,14 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(3, 27);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 24);
+            this.comboBox1.Size = new System.Drawing.Size(300, 24);
             this.comboBox1.Sorted = true;
             this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(190, 27);
+            this.button3.Location = new System.Drawing.Point(this.comboBox1.Width+5, 27);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 23);
             this.button3.TabIndex = 7;
@@ -230,7 +227,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(295, 27);
+            this.button4.Location = new System.Drawing.Point(this.comboBox1.Width+this.button3.Width+10, 27);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 23);
             this.button4.TabIndex = 8;
@@ -240,7 +237,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(594, 27);
+            this.button5.Location = new System.Drawing.Point(this.dataGridView1.Width-this.button4.Width-5, 27);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 23);
             this.button5.TabIndex = 9;
@@ -279,6 +276,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 437);
+           
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
@@ -301,6 +299,7 @@
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+            STARTING_HEIGHT = this.Height;
 
         }
         private System.Windows.Forms.Button button1;

@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{63777D54-E861-4A59-9B61-16CA026C1E2B}|Default">
+  <MonoDevelop.Ide.ItemProperties.Bills PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bills" expanded="True" selected="True">
+            <Node name="Bills" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Form1.cs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

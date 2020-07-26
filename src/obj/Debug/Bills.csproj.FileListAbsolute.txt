@@ -1,16 +1,33 @@
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\bin\Debug\Bills.exe.config
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\bin\Debug\Bills.exe
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\bin\Debug\Bills.pdb
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.csprojResolveAssemblyReference.cache
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Properties.Resources.resources
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.csproj.GenerateResource.Cache
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.exe
-c:\users\mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.pdb
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form2.resources
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form1.resources
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form3.resources
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form4.resources
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form5.resources
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form6.resources
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form7.resources
-C:\Users\Mike\documents\visual studio 2017\Projects\Bills\Bills\obj\Debug\Bills.Form8.resources
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/bin/Debug/Bills.exe.config
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/bin/Debug/Bills.exe
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/bin/Debug/Bills.pdb
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.csprojResolveAssemblyReference.cache
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Properties.Resources.resources
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.csproj.GenerateResource.Cache
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.exe
+c:/users/mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.pdb
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form2.resources
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form1.resources
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form3.resources
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form4.resources
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form5.resources
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form6.resources
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form7.resources
+C:/Users/Mike/documents/visual studio 2017/Projects/Bills/Bills/obj/Debug/Bills.Form8.resources
+/home/vapula87/bill-manager/src/bin/Debug/Bills.exe.config
+/home/vapula87/bill-manager/src/bin/Debug/Bills.exe
+/home/vapula87/bill-manager/src/bin/Debug/Bills.pdb
+/home/vapula87/bill-manager/src/obj/Debug/Bills.csprojAssemblyReference.cache
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form1.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form2.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form3.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form4.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form5.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form6.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form7.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Form8.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.Properties.Resources.resources
+/home/vapula87/bill-manager/src/obj/Debug/Bills.csproj.GenerateResource.cache
+/home/vapula87/bill-manager/src/obj/Debug/Bills.csproj.CoreCompileInputs.cache
+/home/vapula87/bill-manager/src/obj/Debug/Bills.exe
+/home/vapula87/bill-manager/src/obj/Debug/Bills.pdb

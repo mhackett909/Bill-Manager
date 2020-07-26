@@ -3,56 +3,60 @@ using System.Windows.Forms;
 using System.Xml;
 namespace Bills {
     public partial class Form1 : Form {
-        int sortedBy = 0, maxRows = 15;
-        bool ascending = false;
+        int sortedBy = 0, maxRows;
+        private static int STARTING_HEIGHT = 0;
+        bool ascending = false, maximized = true;
         bills newBills = new bills();
         Form2 newWindow;
         public int selectedElem = 0;
         string selectedItem;
         public Form1() { InitializeComponent(); }
         private void Form1_Load(object sender, EventArgs e) {
+
             newBills.popBills();
             popCombo();
+            Form1_Resize(null, null);
         }
-        private void Form1_Resize(object sender, EventArgs e) {
+        private void Form1_Resize(object sender, EventArgs e)
+        {
             if (WindowState.ToString() != "Minimized") {
-                this.button5.Location = new System.Drawing.Point(this.Width - 120, 27);
-                this.button1.Location = new System.Drawing.Point(2, this.Height - 65);
-                this.button2.Location = new System.Drawing.Point(95, this.Height - 65);
-                this.textBox1.Location = new System.Drawing.Point(this.Width - 343, this.Height - 60);
-                this.textBox2.Location = new System.Drawing.Point(this.Width - 197, this.Height - 60);
-                this.dataGridView1.Size = new System.Drawing.Size(this.Width - 23, this.Height - 123);
-                maxRows = (dataGridView1.Height / dataGridView1.Rows[0].Height) - 1;
+                this.dataGridView1.Size = new System.Drawing.Size(this.Width - 14, this.Height - 123);
+                this.button5.Location = new System.Drawing.Point(this.dataGridView1.Width - this.button4.Width + 4, 29);
+                maxRows = (dataGridView1.Height / dataGridView1.RowTemplate.Height);
                 int currentRows = dataGridView1.Rows.Count;
                 int numBills = newBills.theBills.Count;
-                Console.WriteLine(WindowState);
-                Console.WriteLine("Max: "+maxRows);
-                Console.WriteLine("Current: " +currentRows);
-                Console.WriteLine("Bills: " + numBills);
-                if (WindowState.ToString() == "Maximized") {
+                if (this.Height <= STARTING_HEIGHT) maximized = false;
+                else maximized = true;
+                if (maximized) { 
+                    int newY = (int)Math.Floor(this.Height * 0.95);
+                    this.button1.Location = new System.Drawing.Point(3, newY);
+                    this.button2.Location = new System.Drawing.Point(110, newY);
+                    this.textBox1.Location = new System.Drawing.Point(this.Width - 343, newY + 5);
+                    this.textBox2.Location = new System.Drawing.Point(this.Width - 197, newY + 5);
                     if (maxRows > numBills && numBills > currentRows) dataGridView1.Rows.Add(maxRows - numBills);
                     else if (maxRows > numBills && maxRows != currentRows) dataGridView1.Rows.Add(maxRows - currentRows);
-                    this.comboBox1.Size = new System.Drawing.Size(300, 24);
-                    this.button3.Location = new System.Drawing.Point(310, 27);
-                    this.button4.Location = new System.Drawing.Point(415, 27);
                     this.Column1.Width = 120;
                     this.Column2.Width = 120;
                     this.Column3.Width = 120;
                     this.Column4.Width = this.dataGridView1.Width - 183;
+                    maximized = true;
                 }
-                else if (WindowState.ToString() == "Normal") {
-                    for (int z = dataGridView1.Rows.Count; z > (numBills < 15 ? 15 : numBills); z--) dataGridView1.Rows.RemoveAt(z - 1);
-                    this.comboBox1.Size = new System.Drawing.Size(180, 24);
-                    this.button3.Location = new System.Drawing.Point(190, 27);
-                    this.button4.Location = new System.Drawing.Point(295, 27);
+                else {
+                    int newY = (int)Math.Floor(this.Height * 0.89);
+                    this.button1.Location = new System.Drawing.Point(3, newY);
+                    this.button2.Location = new System.Drawing.Point(110, newY);
+                    this.textBox1.Location = new System.Drawing.Point(this.Width - 343, newY + 5);
+                    this.textBox2.Location = new System.Drawing.Point(this.Width - 197, newY + 5);
+                    for (int z = dataGridView1.Rows.Count; z > (numBills < 16 ? 16 : numBills); z--) dataGridView1.Rows.RemoveAt(z - 1);
                     this.Column1.Width = 90;
                     this.Column2.Width = 90;
                     this.Column3.Width = 90;
                     this.Column4.Width = this.dataGridView1.Width - 273;
+                    maximized = false;
                 }
-                int tester = (dataGridView1.Height - 2) - (maxRows * 22);
-                tester -= 21;
-                dataGridView1.ColumnHeadersHeight = 21 + tester;
+                //  int tester = (dataGridView1.Height - 2) - (maxRows * 22);
+                // tester -= 21;
+                // dataGridView1.ColumnHeadersHeight = 21 + tester;
             }
         }
         private void helpToolStripMenuItem_Click(object sender, EventArgs e) {
@@ -179,6 +183,7 @@ namespace Bills {
             }
         }
         public void dataGridView1_SelectionChanged(object sender, EventArgs e) {
+            if (dataGridView1.CurrentCell == null) return;
             selectedElem = dataGridView1.CurrentCell.RowIndex;
             if (newBills.openForm("Form2")) newWindow.statusChanged(selectedElem);
         }
